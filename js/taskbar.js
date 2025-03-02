@@ -24,7 +24,7 @@ buttons.forEach(function(button){
         const timeString = hour + ':' + min + ' ' + timeFormat;
         const historyDiv = document.createElement('div');
         const history = document.createElement('p');
-        history.innerText = "You have completed the task "+ taskName + "at " + timeString;
+        history.innerText = "You have completed the task "+ taskName + " at " + timeString;
         historyDiv.appendChild(history);
         historyDiv.classList.add("bg-[#F4F7FF]", "p-2", "rounded-xl", "mt-3");
         activity.appendChild(historyDiv);
