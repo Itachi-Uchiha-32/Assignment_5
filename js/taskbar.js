@@ -5,7 +5,8 @@ const activity = document.getElementById('activity');
 
 buttons.forEach(function(button){
     button.addEventListener('click', function(){
-        button.disable = true;
+        button.disabled = true;
+        button.classList.add('opacity-50', 'cursor-not-allowed');
         const currentPoints = parseInt(points.innerText);
         points.innerText = currentPoints+1;
         const tasks = parseInt(taskNumber.innerText);
