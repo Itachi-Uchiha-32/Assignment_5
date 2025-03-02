@@ -13,7 +13,8 @@ buttons.forEach(function(button){
         const taskCard = button.closest('.task-card');
         const taskName = taskCard.getAttribute('data-task');
         taskNumber.innerText = tasks-1;
-        alert("Borad Updated Succesfully")
+        alert("Borad Updated Succesfully");
+        if(parseInt(taskNumber.innerText)===0) alert('Congrats!!! You have Completed all the tasks');
         const time = new Date();
         let hour = time.getHours();
         let min = time.getMinutes();
@@ -29,3 +30,4 @@ buttons.forEach(function(button){
         activity.appendChild(historyDiv);
     })
 })
+

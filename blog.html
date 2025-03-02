@@ -40,27 +40,34 @@
     <div class="collapse bg-base-100 border border-base-300">
       <input type="radio" name="my-accordion-1" checked="checked" />
       <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
-      <div class="collapse-content text-sm">By using getElementById, getElementsByClassName, querySelectorAll, querySelector </div>
+      <div class="collapse-content text-sm text-slate-400">By using getElementById(), getElementsByClassName(), getElementsByTagName(),querySelectorAll(), querySelector(), getAttribute() </div>
     </div>
     <div class="collapse bg-base-100 border border-base-300">
       <input type="radio" name="my-accordion-1" />
       <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
-      <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+      <div class="collapse-content text-sm text-slate-400">innerHTML: Gets or sets the HTML content inside an element (including HTML tags).
+        Allows HTML markup (tags like <b>, <a>, etc.)
+          innerText: Gets or sets the visible text content of an element, excluding HTML tags
+          textContent: Gets or sets the text content of an element, including hidden text (no HTML parsing)
+Unlike innerText, it does not consider CSS styling
+        </div>
     </div>
     <div class="collapse bg-base-100 border border-base-300">
       <input type="radio" name="my-accordion-1" />
       <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
-      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+      <div class="collapse-content text-sm text-slate-400">Event delegation is a technique where instead of adding event listeners to each individual element, a single event listener is added to a parent element, This listener listens for events that bubble up from child elements, It uses the event's target property to determine which child element triggered the event,
+        It improves performance, especially when dealing with a large number of elements,
+        It allows dynamically added elements to inherit the event listener without having to rebind the listener,</div>
     </div>
     <div class="collapse bg-base-100 border border-base-300">
       <input type="radio" name="my-accordion-1" />
       <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
-      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+      <div class="collapse-content text-sm text-slate-400">Event bubbling is the process by which an event, after being triggered on an element, propagates (or "bubbles") up to its parent elements in the DOM tree, This means the event is first captured by the target element and then passed up to its ancestors, triggering the same event on each parent element,</div>
     </div>
     <div class="collapse bg-base-100 border border-base-300">
       <input type="radio" name="my-accordion-1" />
       <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
-      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+      <div class="collapse-content text-sm text-slate-400">Creating an element: Use document.createElement() to create an element, And by using appendChild() we can put it inside the DOM and to remove we can use removeChild()</div>
     </div>
   </div>
 </body>
