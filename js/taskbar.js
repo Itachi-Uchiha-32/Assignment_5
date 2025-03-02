@@ -5,9 +5,12 @@ const activity = document.getElementById('activity');
 
 buttons.forEach(function(button){
     button.addEventListener('click', function(){
+        button.disable = true;
         const currentPoints = parseInt(points.innerText);
         points.innerText = currentPoints+1;
         const tasks = parseInt(taskNumber.innerText);
+        const taskCard = button.closest('.task-card');
+        const taskName = taskCard.getAttribute('data-task');
         taskNumber.innerText = tasks-1;
         alert("Borad Updated Succesfully")
         const time = new Date();
@@ -19,7 +22,7 @@ buttons.forEach(function(button){
         const timeString = hour + ':' + min + ' ' + timeFormat;
         const historyDiv = document.createElement('div');
         const history = document.createElement('p');
-        history.innerText = "You have completed the task at " + timeString;
+        history.innerText = "You have completed the task "+ taskName + "at " + timeString;
         historyDiv.appendChild(history);
         historyDiv.classList.add("bg-[#F4F7FF]", "p-2", "rounded-xl", "mt-3");
         activity.appendChild(historyDiv);

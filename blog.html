@@ -1,15 +1,57 @@
-<div class="collapse bg-base-100 border border-base-300">
-    <input type="radio" name="my-accordion-1" checked="checked" />
-    <div class="collapse-title font-semibold">How do I create an account?</div>
-    <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+          --color-skyBlue: #3752FD;
+          --color-skyBlue-2: #6C7FFA;
+          --color-skyBlue-3: #9BA8F8;
+          
+        }
+      </style>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0/themes.css" rel="stylesheet" type="text/css" />
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <nav class="px-12 pt-5">
+    <div class="navbar bg-base-100 shadow-sm rounded-xl flex justify-between px-5">
+        <div class="flex items-center gap-2">
+          <img src="assets/logo.png" alt="">
+          <h2 class="text-2xl">Dev<span class="font-bold">Board</span></h2>
+        </div>
+        <div class="flex gap-5 items-center">
+          <div class="flex w-full gap-2 bg-[#F4F7FF] px-4 py-3 rounded-full justify-center">
+            <img src="assets/checkbox.png" alt="">
+            <h2 id="points" class="font-bold text-2xl">23</h2>
+          </div>
+          <button class="btn bg-[#F4F7FF] rounded-full  border-none py-8">
+            <img class=" h-100%" src="assets/theme-btn.png" alt="">
+          </button>
+        </div>
+      </div>
+</nav>
+  <div class="container mx-auto mt-5">
+    <div class="collapse bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title font-semibold">How do I create an account?</div>
+      <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+    </div>
+    <div class="collapse bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
+      <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+    </div>
+    <div class="collapse bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title font-semibold">How do I update my profile information?</div>
+      <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+    </div>
   </div>
-  <div class="collapse bg-base-100 border border-base-300">
-    <input type="radio" name="my-accordion-1" />
-    <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-    <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
-  </div>
-  <div class="collapse bg-base-100 border border-base-300">
-    <input type="radio" name="my-accordion-1" />
-    <div class="collapse-title font-semibold">How do I update my profile information?</div>
-    <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
-  </div>
+</body>
+</html>

@@ -70,12 +70,12 @@
                  </div>
                  <hr class="mb-8 border-dashed border-cyan-400">
                  <div class="grid grid-cols-3 gap-4">
-                    <div class="card bg-[#F4F7FF] w-100% shadow-sm">
+                    <div class="task-card card bg-[#F4F7FF] w-100% shadow-sm" data-task="Fix Mobile Button Issue">
                         <div class="card-body">
                           <div class="bg-white w-2/5 p-4 rounded-lg">
                             <h2 class="card-title ">ShopEase</h2>
                           </div>
-                          <h1 id class="text-2xl font-bold">Fix Mobile Button Issue </h1>
+                          <h1 class="text-2xl font-bold">Fix Mobile Button Issue </h1>
                           <div class="bg-white p-4 rounded-xl mb-7">
                              <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -91,12 +91,12 @@
                         </div>
                         </div>
                       </div>
-                    <div class="card bg-[#F4F7FF] w-100% shadow-sm">
+                    <div class="task-card card bg-[#F4F7FF] w-100% shadow-sm" data-task="Add Dark Mode">
                         <div class="card-body">
                           <div class="bg-white w-2/5 p-4 rounded-lg">
                             <h2 class="card-title ">CloudSync</h2>
                           </div>
-                          <h1 id class="text-2xl font-bold">Add Dark Mode </h1>
+                          <h1 class="text-2xl font-bold">Add Dark Mode </h1>
                           <div class="bg-white p-4 rounded-xl mb-7">
                              <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                           </div>
@@ -111,12 +111,12 @@
                         </div>
                         </div>
                       </div>
-                    <div class="card bg-[#F4F7FF] w-100% shadow-sm">
+                    <div class="task-card card bg-[#F4F7FF] w-100% shadow-sm" data-task="Optimize  Home page">
                         <div class="card-body">
                           <div class="bg-white w-2/5 p-4 rounded-lg">
                             <h2 class="card-title ">SwiftPay</h2>
                           </div>
-                          <h1 id class="text-2xl font-bold">Optimize  Home page  </h1>
+                          <h1 class="text-2xl font-bold">Optimize  Home page  </h1>
                           <div class="bg-white p-4 rounded-xl mb-7">
                              <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -132,12 +132,12 @@
                         </div>
                         </div>
                       </div>
-                    <div class="card bg-[#F4F7FF] w-100% shadow-sm">
+                    <div class="task-card card bg-[#F4F7FF] w-100% shadow-sm" data-task="Add new emoji 🤲">
                         <div class="card-body">
                           <div class="bg-white w-2/5 p-4 rounded-lg">
                             <h2 class="card-title ">Meta</h2>
                           </div>
-                          <h1 id class="text-2xl font-bold">Add new emoji 🤲 </h1>
+                          <h1 class="text-2xl font-bold">Add new emoji 🤲 </h1>
                           <div class="bg-white p-4 rounded-xl mb-7">
                              <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -153,12 +153,12 @@
                         </div>
                         </div>
                       </div>
-                    <div class="card bg-[#F4F7FF] w-100% shadow-sm">
+                    <div class="task-card card bg-[#F4F7FF] w-100% shadow-sm" data-task="Integrate OpenAI API">
                         <div class="card-body">
                           <div class="bg-white w-2/5 p-4 rounded-lg">
                             <h2 class="card-title ">Google LLC</h2>
                           </div>
-                          <h1 id class="text-2xl font-bold">Integrate OpenAI API </h1>
+                          <h1  class="text-2xl font-bold">Integrate OpenAI API </h1>
                           <div class="bg-white p-4 rounded-xl mb-7">
                              <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -174,12 +174,12 @@
                         </div>
                         </div>
                       </div>
-                    <div class="card bg-[#F4F7FF] w-100% shadow-sm">
+                    <div class="task-card card bg-[#F4F7FF] w-100% shadow-sm" data-task="Improve Job searching">
                         <div class="card-body">
                           <div class="bg-white w-2/5 p-4 rounded-lg">
                             <h2 class="card-title ">Glassdoar</h2>
                           </div>
-                          <h1 id class="text-2xl font-bold">Improve Job searching  </h1>
+                          <h1 class="text-2xl font-bold">Improve Job searching  </h1>
                           <div class="bg-white p-4 rounded-xl mb-7">
                              <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly/p>
@@ -197,7 +197,7 @@
                       </div>
                  </div>
             </section>
-            <section id="activity" class="bg-white py-6 px-10 w-2/5 rounded-xl">
+            <section class="bg-white py-6 px-10 w-2/5 rounded-xl">
                 <div class="flex gap-3 mb-4">
                     <div>
                         <img class="w-100% h-100%" src="assets/activity.png" alt="">
@@ -206,13 +206,17 @@
                 </div>
                 <hr class="border-dashed border-cyan-400 mb-4">
                 <div class="flex justify-center">
-                    <button class="btn text-white bg-blue-700 rounded-xl">
+                    <button id="clear" class="btn text-white bg-blue-700 rounded-xl">
                         Clear History
                     </button>
+                </div>
+                <div id="activity">
                 </div>
             </section>
         </section>
     </main>
+    <script src="js/history.js"></script>
     <script src="js/taskbar.js"></script>
+    <script src="js/blogPage.js"></script>
 </body>
 </html>
